@@ -120,13 +120,27 @@ print(name.replace("programming","interpretur"))'''
 if "is" in name:
     print("yes it is there")
 else:
-    print("no it is not there")'''
+    print("no it is not there")
 
 name = "Python is a programming language"
 if "ython" in name:
     print("yes it is there")
 else:
-    print("no it is not there")
+    print("no it is not there")'''
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
