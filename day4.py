@@ -128,6 +128,8 @@ if "ython" in name:
 else:
     print("no it is not there")'''
 
+name = "Python is a programming language"
+print(name.join("-"))
 
 
 

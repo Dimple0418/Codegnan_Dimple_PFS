@@ -21,6 +21,7 @@ else:
 '''
 
 
+001000000000000000000006555pm3
 
 '''
 #List--> What is a List in Python?
@@ -105,14 +106,34 @@ list_.remove(23)
 print(list_)'''
 
 
+'''
+#Example of pop
 list_=[23,34,56]
 list_.pop(1)
 print(list_)
 
 
 
+n=input()
+if n in "AEIOUaeiou":
+    print("vowels")
+else:
+    print("Consonants")
 
 
+n = input("Enter a character: ")
+
+if len(n) == 1 and n.isalpha():
+    if n.lower() in "aeiou":
+        print("Vowel")
+    else:
+        print("Consonant")
+else:
+    print("Invalid input")'''
+
+
+
+ 
 
 
 
