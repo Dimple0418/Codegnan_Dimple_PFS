@@ -159,7 +159,7 @@ for an in any:
     if an not in empty:
         empty.append(an)
         print(empty)
-'''
+
 
 so=int(input())
 length=len(str(so))
@@ -171,7 +171,7 @@ if amstr == so:
     print(f"{so} is amstrong num")
 else:
     print(f"{so} is not amstrong num")
-        
+        '''
     
 
 
