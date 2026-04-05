@@ -1,4 +1,5 @@
 #pattern program
+#---------------------------------------------------
 '''
 num=int(input("ENTER THE LIMIT: "))
 for j in range(num):                    ---> postion
@@ -42,22 +43,39 @@ for j in range(1,num+1):
 
 num=int(input("ENTER THE LIMIT: "))
 for j in range(num):
-    print(" "*(num-j-1),end= "")
+    print(" "*(num-j),end= "")
     for i in range(j+1):
         print("*",end = " ")
     print()
 '''
+'''
+num=int(input("ENTER THE LIMIT: "))
+for i in range(num):                   
+    for j in range(i+1):                  
+        print("*", end = "")
+    print()
+
+num=int(input("ENTER THE LIMIT: "))
+for i in range(1,num+1):                   
+    for j in range(1,i+1):                  
+        print("*", end = "")
+    print()
+
+num=int(input("ENTER THE LIMIT: "))
+for j in range(num):                    #--> postion
+    for i in range(j):                  #---> to prints *
+        print("*", end = "")
+    print()
 
 
+num=int(input("ENTER THE LIMIT: "))
+for j in range(num):
+    print(" "*(num-j),end= "")
+    for i in range(j+1):
+        print("*",end = " ")
+    print()
 
-
-
-
-
-
-
-
-
+'''
 
 
 
