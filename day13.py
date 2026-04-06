@@ -62,7 +62,7 @@ no_days = int(input())
 result = ((previous >= 1) and (previous <= 4)) and ((age >= 18) and (age <= 35)) and ((no_days >= 5))
 print(result)
 
-'''
+
 
 
 
