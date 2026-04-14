@@ -39,8 +39,8 @@ def add(num,count):
 num=int(input("ENTER A VALUE : "))
 count=0  
 add(num,count)
-
 '''
+
 
 
 #keyword arrguments
@@ -108,21 +108,21 @@ type(num)
 
 # 1.syntax error --> if a function or any method is not ended properly using colon or parenthisis we get error  and also the statement should end uop with colon
 
-    '''eg. for j in range ()       {error -- missing colon}
-               print (j)'''
+    '''eg. for j in range():     #{error -- missing colon}
+                print (j)'''
     
 # 2.indentation error --> Indentend value is expected after a for statement there should be tab space 
 
-     ''' eg. for j in range ()       {error -- identation }
-             print (j)'''
+     ''' eg. for j in range ():       #{error -- identation }
+                 print (j)'''
 # 3.attribute error --> use only methods for applicable datatypes, dont use for other
 
     ''' eg. a=[4,5,6]
-            a.replace(9)         {string method is replace it used for list }
+            a.replace(9)         #{string method is replace it used for list }
             print(a) '''
 # 4.type error --> the given values are differnt data types
 
-    ''' eg. print(9+"dimple")     {type error because 9 is int dimple is string} '''
+    ''' eg. print(9+"dimple")     #{type error because 9 is int dimple is string} '''
 
 
 
