@@ -68,8 +68,68 @@ while k<5:
 '''
 
 
-'''
+
 #4
+
+
+
+
+
+'''
+def pyramid(rows):
+    for i in range(1,rows+1):
+        for j in range(rows+1-i):
+            print(" ",end="")
+            
+        for k in range(i):
+            print("*",end=" ")
+        print()
+    
+rows=int(input())
+pyramid(rows)
+
+
+
+
+
+def pyramid(num):
+    for i in range(1,num+1):
+        for j in range(i):
+            print("*",end="")
+            
+        print()
+    
+num=int(input())
+pyramid(num)
+'''
+
+
+
+
+
+
+
+
+def anagram(s1, s2):
+    if sorted(s1) == sorted(s2):
+        print("Anagram")
+    else:
+        print("Not Anagram")
+
+s1 = input().lower()
+s2 = input().lower()
+
+anagram(s1, s2)
+
+
+
+
+
+
+
+
+
+
 
 
 
