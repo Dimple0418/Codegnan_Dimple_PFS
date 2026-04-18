@@ -61,6 +61,7 @@ func(rows)
 
 #6.Diamond
 
+
 def func(rows):
 
     for i in range (1,rows+1):
