@@ -101,13 +101,6 @@ def pyramid(num):
     
 num=int(input())
 pyramid(num)
-'''
-
-
-
-
-
-
 
 
 def anagram(s1, s2):
@@ -120,6 +113,63 @@ s1 = input().lower()
 s2 = input().lower()
 
 anagram(s1, s2)
+'''
+
+
+
+
+
+def withdraw(bal):
+    user=int(input("ENTER AMOUNT FOR WITHDRAW : "))
+    bal-=user
+    print(bal)
+
+def deposit(bal):
+    user_1=int(input("ENTER A AMOUNT: "))
+    bal+=user_1
+    print(bal)
+
+def check(bal):
+    print("YOUR BALANCE IS :",bal)
+
+############################################################################
+dic = {"ATM_PIN": 2005}
+bal=10000
+
+Pin = int(input("ENTER A PIN: "))
+
+if Pin == dic["ATM_PIN"]:
+    print("OPTIONS \n1. WITHDRAW \n2. DEPOSIT \n3. CHECK BALANCE")
+    c=int(input("Enter a option: "))
+##############################################################################
+    if c==1 :
+       withdraw(bal) 
+
+    elif c==2:
+        deposit(bal)
+
+    elif c==3:
+        check(bal)
+
+
+else:
+    print("WRONG PIN , PLEASE ENTER CORRECT PIN :")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
