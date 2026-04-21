@@ -113,7 +113,6 @@ s1 = input().lower()
 s2 = input().lower()
 
 anagram(s1, s2)
-'''
 
 
 
@@ -155,22 +154,70 @@ if Pin == dic["ATM_PIN"]:
 else:
     print("WRONG PIN , PLEASE ENTER CORRECT PIN :")
 
+'''
+'''
+st=["de","dep","fgh"]
+qu=["de","imm","fgh"]
+c=0
+for i in range(len(qu)):
+    for j in range(len(st)):
+        if qu[i]== st[j] :
+            c+=1
+print(c)
+'''
+st = ["de", "dep", "fgh"]
+qu = ["de", "imm", "fgh"]
+
+for i in range(len(qu)):
+    c = 0
+    for j in range(len(st)):
+        if qu[i] == st[j]:
+            c += 1
+    print(c)
+'''
+def arrayManipulation(n, queries):
+    arr = [0] * (n + 2)   # extra space for b+1 safety
+
+    for a, b, k in queries:
+        arr[a] += k
+        arr[b + 1] -= k
+
+    max_val = 0
+    current = 0
+
+    for i in range(1, n + 1):
+        current += arr[i]
+        if current > max_val:
+            max_val = current
+
+    return max_val
+
+n, m = map(int, input().split())
+
+arr = [0] * (n + 2)
+
+# Taking queries input and updating difference array
+for _ in range(m):
+    a, b, k = map(int, input().split())
+    arr[a] = arr[a] + k
+    
+    if (b + 1) <= n:
+        arr[b + 1] = arr[b + 1] - k
+
+# Prefix sum to find maximum
+max_val = 0
+current = 0
+
+for i in range(1, n + 1):
+    current = current + arr[i]
+    
+    if current > max_val:
+        max_val = current
+
+print(max_val)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+'''
 
 
 
