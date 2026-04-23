@@ -1,4 +1,4 @@
-'''def add(d,r):
+def add(d,r):
     return d+r
 
 def sub(d,r):
@@ -7,7 +7,7 @@ def sub(d,r):
 def mul(d,r):
     return d*r
 
-'''
+
 '''
 def func(rows):
 
@@ -164,7 +164,7 @@ for i in range(len(qu)):
         if qu[i]== st[j] :
             c+=1
 print(c)
-'''
+
 st = ["de", "dep", "fgh"]
 qu = ["de", "imm", "fgh"]
 
@@ -174,7 +174,7 @@ for i in range(len(qu)):
         if qu[i] == st[j]:
             c += 1
     print(c)
-'''
+
 def arrayManipulation(n, queries):
     arr = [0] * (n + 2)   # extra space for b+1 safety
 
