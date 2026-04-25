@@ -219,16 +219,59 @@ print(max_val)
 
 '''
 
+'''
+
+class student:
+    name=input()
+    id=int(input())
+
+    def show(self):
+        print("NAME :",self.name)
+        print("ID:",self.id)
+
+
+obj=student()
+obj.show()
+
+class father:
+    def __init__(self,name,roll_no):
+        self.name=name
+        self.roll_no=roll_no
+    def show(self):
+        print("name:", self.name)
+        print("roll no :",self.roll_no)
+
+
+obj=father(name=input(),
+roll_no=int(input()))
+obj.show()
+
+
+'''
 
 
 
 
+class Student:
+    def __init__(self, name, roll_no, marks):
+        self.name = name
+        self.roll_no = roll_no
+        self.marks = marks
+
+    def display_details(self):
+        print("Name:", self.name, "Roll No:", self.roll_no, "Marks:", self.marks)
 
 
+# # User Input
+# name = input("Enter Student Name: ")
+# roll_no = int(input("Enter Roll Number: "))
+# marks = int(input("Enter Marks: "))
 
+# Object Creation
+s1 = Student(name = input(),roll_no = int(input()),marks = int(input()))
 
-
-
+# Display Output
+s1.display_details()
 
 
 
