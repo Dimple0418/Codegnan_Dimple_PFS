@@ -247,7 +247,7 @@ roll_no=int(input()))
 obj.show()
 
 
-'''
+
 
 
 
@@ -274,14 +274,41 @@ s1 = Student(name = input(),roll_no = int(input()),marks = int(input()))
 s1.display_details()
 
 
+n=int(input())
+k=0
+for i in range (1,n+1):
+    if i*i == n:
+        k=i
+if k*k==n:
+    print(f"{k} it is square root of {n}")    
+else:
+    print("it is not perfect square root number ")
 
 
+n=[1,2,4,5]
+m=len(n)+1
+some = (m*(m+1))//2 
+c=0
+for i in n:
+    c+=i
+print(some-c)
+    
+'''
 
+a=[1,2,3,4]
+b=[1,2,3]
+c=0
+if len(a) == len(b):
 
-
-
-
-
+    for i in range(len(a)):
+        if a[i]==b[i]:
+            c+=1
+    if c!= len(a):
+        print("no")
+    else:
+        print("yes")
+else:
+    print("not matched")
 
 
 
