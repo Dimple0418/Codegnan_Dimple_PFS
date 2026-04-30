@@ -274,6 +274,8 @@ s1 = Student(name = input(),roll_no = int(input()),marks = int(input()))
 s1.display_details()
 
 
+
+#square root
 n=int(input())
 k=0
 for i in range (1,n+1):
@@ -284,7 +286,7 @@ if k*k==n:
 else:
     print("it is not perfect square root number ")
 
-
+#missing number
 n=[1,2,4,5]
 m=len(n)+1
 some = (m*(m+1))//2 
@@ -292,9 +294,8 @@ c=0
 for i in n:
     c+=i
 print(some-c)
-    
-'''
 
+#arrays equal or not
 a=[1,2,3,4]
 b=[1,2,3]
 c=0
@@ -310,5 +311,25 @@ if len(a) == len(b):
 else:
     print("not matched")
 
+    
+a=[1,1,1,1,1,1]
+dic={}
+for i in a:
+    if i not in dic:
+        dic[i]=1
+    else:
+        dic[i]+=1
+print(dic)
 
 
+def get(a,b):
+    c=(a**b)%10
+    # d=str(c)
+    # e=d[-1]
+    print(c)
+a=int(input())
+b=int(input())
+get(a,b)
+
+'''
+        
